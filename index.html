@@ -5,25 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-uppage</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body{
-            
-            background-repeat: no-repeat;
             text-align: center;
             background-color: aqua;
         }
 
-        #image{
-            float: left;
-            height:800px;
+        /* #image{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 30%;
+            padding-bottom: 100px; */
 
+        /* } */
+        .container img{
+            /* justify-content: center; */
+            /* display: block; */
+            width: 50%;
+            float: left;
+            /* padding-right: 20px; */
         }
+
+        .form{
+            padding-right: 50px;
+            }
         </style>
 </head>
+
 <body>
-    <form>
+    <div class="container">
+        <img src="/corazon.jpg" id="image">
+    <form class="form">
     <h1>Sign-up To Zoho</h1>
-    <img src="/corazon.jpg" id="image">
     <label>Already have an accont? 
         <button><a href="login.html">sign In</a></button>
     </label>
@@ -54,6 +68,7 @@
     </label>
 
    </form>
+   </div>
     
 </body>
 </html>

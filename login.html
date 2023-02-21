@@ -5,21 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login in</title>
+    <link rel="stylesheet" href="login.css">
     <style>
         body{
             background-color: aqua;
+            text-align: center;
 
         }
         #image{
-            float: left;
-            width: 25%;
+            display: flex;
+            flex-direction: column-reverse;
+            width: 30%;
+            padding: bottom 100px; ;
+            
+        }
+        .container img{
+            justify-content: center;
+            display: block;
+            width: 50%;
+            padding-right: 20px;
+        }
+        .form{
+            padding-bottom: 30px;
+
         }
     </style>      
 </head>
 <body>
-    <img src="/corazon.jpg" id="image">
-    <h1>Login to Zoho</h1>
-    <form>
+    <div class="container">
+    <!-- <img src="/corazon.jpg" id="image"> -->
+    <form class="form">
+    <h1>Login to Zoho</h1>`
+    
      <label>Dont have an account?
         <button><a href="index.html">sign up</a></button>
     </label>
@@ -37,5 +54,6 @@
         <br>
     <button type="button"><a href="table.html">login</a></button>
     </form>
+    </div>
 </body>
 </html>
